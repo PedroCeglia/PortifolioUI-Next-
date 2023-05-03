@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withTM = require('next-transpile-modules')(['react-tilt']);
 
-module.exports = nextConfig
+module.exports = withTM({
+  // ...rest of your config
+  reactStrictMode: true
+});
+
+
