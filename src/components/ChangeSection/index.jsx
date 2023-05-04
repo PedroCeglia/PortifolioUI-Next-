@@ -1,10 +1,11 @@
 import { ChangeSectionStyle } from "./style";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export default function ChangeSection(){
     return(
         <ChangeSectionStyle>
-            <a href='#about' className="content">
+            <Link to='about-me-section' smooth duration={1000} className="content">
             <div className="switch">
                 <motion.div
                 animate={{
@@ -18,7 +19,7 @@ export default function ChangeSection(){
                 className='ball'
                 />
             </div>
-            </a>
+            </Link>
         </ChangeSectionStyle>
     )
 }
