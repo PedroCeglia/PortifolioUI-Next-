@@ -4,11 +4,9 @@ import style from "../../styles";
 export const EstruturaPaginaStyle = styled.div`
     min-height: calc(100vh);
     width: 100%;
-    padding-top: 90px;
 
     position: relative;
-    
-    background-color: ${style.theme.backgroundColor.bc1};
+    background-color:${style.theme.backgroundColor.bc3};
     color: ${style.theme.color.c1};
 
     display: flex;
