@@ -2,11 +2,12 @@ import {HeaderStyle, HeaderNavStyle} from "./style"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { navLinksList } from "@/constants"
-import toggleOpen from "../../../public/assets/icons/menu.png"
-import toggleClose from "../../../public/assets/icons/close.png"
+import toggleOpen from "../../../../public/assets/icons/menu.png"
+import toggleClose from "../../../../public/assets/icons/close.png"
+
 
 export default function Header(){
-    const [toggleMenu, setToggleMenu] = useState("isOpen")
+    const [toggleMenu, setToggleMenu] = useState("isClose")
 
     function handleToggleMenuButton(nameClass){
         setToggleMenu(nameClass)

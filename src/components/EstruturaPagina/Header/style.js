@@ -1,7 +1,7 @@
 'use client'
 
 import styled from "styled-components";
-import style from "../../styles";
+import style from "../../../styles";
 
 
 export const HeaderStyle = styled.header`
@@ -10,12 +10,12 @@ export const HeaderStyle = styled.header`
     padding: 20px;
     position: fixed;
     top: 0;
+    z-index: 10;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background-color:${style.theme.backgroundColor.bc1};
     color:${style.theme.color.c1};
 
     font-family:${style.fonts.fontsFamily.brunoAceSc};
@@ -85,8 +85,8 @@ export const HeaderNavStyle = styled.div`
             right: 10px;
             top: 10px;
             border-radius: 10px;
-            background: ${style.theme.createSimpleGradient(style.theme.backgroundColor.bc1,style.theme.getLightColorRGBA(.09))};
-            border: 2px solid ${style.theme.getLightColorRGBA(.2)};
+            background: ${style.theme.createSimpleGradient(style.theme.backgroundColor.bc1,style.theme.rgbaFunctions.getLightColorRGBA(.09))};
+            border: 2px solid ${style.theme.rgbaFunctions.getLightColorRGBA(.2)};
             color: ${style.theme.color.c1};
             
             display: flex;
@@ -126,7 +126,7 @@ export const HeaderNavStyle = styled.div`
             cursor: pointer;
         }
         .imgToggle:hover{
-            filter: drop-shadow(1px 1px 1px ${style.theme.getLightColorRGBA(.4)});
+            filter: drop-shadow(1px 1px 1px ${style.theme.rgbaFunctions.getLightColorRGBA(.4)});
         }
 
     }
