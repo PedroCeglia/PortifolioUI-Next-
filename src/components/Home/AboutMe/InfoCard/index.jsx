@@ -1,7 +1,6 @@
 import { InfoCardStyle } from "./style"
 import { motion } from "framer-motion"
 import {Tilt} from "react-tilt"
-import Image from "next/image"
 
 import { fadeIn } from "@/constants/motion"
 
@@ -11,11 +10,12 @@ export default function InfoCard({name, src, index}){
         scale:1.1,    // 2 = 200%, 1.5 = 150%, etc..
         speed:1000   // Speed of the enter/exit transition
     }
+    const motionVariants = fadeIn("right", "spring", 1 * 0.5, 0.75)
     return(
         <InfoCardStyle>
             <Tilt options={defaultOptions} className='tilt-container'>
                 <motion.div
-                    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+                    variants={motionVariants}
                     className='tilt-content'
                 >
                     <img src={src} alt={`Image ${name}`}/>
