@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import {EstruturaPaginaStyle, ConteudoPaginaStyle} from "./style"
 import Head from 'next/head'
 import Header from "./Header"
@@ -5,6 +6,17 @@ import Footer from "./Footer"
 
 
 export default function EstruturaPagina(props){
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+      function changeScrollPosition() {
+        setScrollPosition(window.scrollY);
+      }
+      window.addEventListener('scroll', changeScrollPosition);
+      return () => {
+        window.removeEventListener('scroll', changeScrollPosition);
+      };
+    }, []);
+
     return(
         <>
             <Head>
@@ -15,7 +27,7 @@ export default function EstruturaPagina(props){
             </Head>
             <EstruturaPaginaStyle>
                 <div className="projeto-top-page"></div>
-                <Header/>
+                <Header scrollPosition={scrollPosition}/>
                 <ConteudoPaginaStyle>
                     {props.children}  
                 </ConteudoPaginaStyle>
