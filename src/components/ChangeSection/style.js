@@ -2,8 +2,8 @@ import styled from "styled-components"
 import style from "@/styles";
 
 export const ChangeSectionStyle = styled.div`
-    width: 30px;
-    height: 60px;
+    width: 33px;
+    height: 70px;
     position: absolute;
     bottom: -30px;
     z-index: 9;
@@ -14,7 +14,7 @@ export const ChangeSectionStyle = styled.div`
 
     .content{
         height: 70px;
-        width: 40px;
+        width: 33px;
         border-radius: 20px;
         background-color: ${style.theme.backgroundColor.bc5};
     }

@@ -65,7 +65,8 @@ const Desktop3DComponent = () => {
       style={{
         maxWidth:"600px", width:"100%", minWidth:"250px",
         minHeight:"380px", height:"380px",
-        display:"flex", justifyContent:"center", alingItens:"center"
+        display:"flex", justifyContent:"center", alingItens:"center",
+        cursor:"grab"
       }}
     >
       <Suspense fallback={<>Carregando . . .</>}>
