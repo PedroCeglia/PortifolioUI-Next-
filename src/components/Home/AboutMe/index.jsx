@@ -2,18 +2,18 @@ import {AboutContainerStyle} from "./style";
 import ChangeSection from '@/components/ChangeSection';
 import { motion } from "framer-motion";
 import InfoCard from "./InfoCard";
-
+import ControlSection from "@/components/ControlSection";
 import { textVariant } from "@/constants/motion";
 
-export default function AboutMe(){
+function AboutMeComponent(){
     return(
         <AboutContainerStyle>
             <div className="content">
-                <motion.div variants={textVariant()}>
+                <motion.div variants={textVariant(.2)} className="section-head">
                     <p>Introdução | Pedro Ceglia | Portifolio UI</p>
                     <h2>Sobre Mim</h2>
                 </motion.div>
-                <motion.p>
+                <motion.p className="description">
                     Eu sou Pedro Silveira Ceglia, tenho 19 anos e sou desenvolverdor Web. 
                     Estudo programação desde 2019, e em 2021 comecei a me especializar em desenvolvimento Web.
                 </motion.p>
@@ -32,3 +32,5 @@ export default function AboutMe(){
         </AboutContainerStyle>
     )
 }
+
+export default ControlSection(AboutMeComponent, "about-me-section")
