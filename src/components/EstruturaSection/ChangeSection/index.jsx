@@ -2,10 +2,10 @@ import { ChangeSectionStyle } from "./style";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-export default function ChangeSection(){
+export default function ChangeSection({slug}){
     return(
         <ChangeSectionStyle>
-            <Link to='about-me-section' smooth duration={1000} className="content">
+            <Link to={slug} smooth duration={1000} className="content">
             <div className="switch">
                 <motion.div
                 animate={{

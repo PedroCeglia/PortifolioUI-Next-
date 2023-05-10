@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { staggerContainer } from "../../constants/motion";
+import { staggerContainer } from "@/constants/motion";
 
 export default function ControlSection (Component, idName){
   return function HOC() {
