@@ -2,7 +2,7 @@ import {AboutContainerStyle} from "./style";
 import InfoCard from "./InfoCard";
 import { ControlSection, ChangeSection, HeaderSection } from "@/components/EstruturaSection";
 
-function AboutMeComponent(){
+function AboutMeSection(){
     const initialHeaderSectionConfigs = {
         preTitle:"Introdução | Pedro Ceglia | Portifolio UI",
         title:"Sobre Mim",
@@ -32,4 +32,4 @@ function AboutMeComponent(){
     )
 }
 
-export default ControlSection(AboutMeComponent, "about-me")
+export default ControlSection(AboutMeSection, "about-me")

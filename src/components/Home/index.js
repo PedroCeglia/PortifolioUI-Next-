@@ -1,6 +1,6 @@
 import EstruturaPagina from "../EstruturaPagina";
-import Intro from "./Intro";
-import AboutMe from "./AboutMe";
-import Historico from "./Hisorico";
+import IntroSection from "./Intro";
+import AboutMeSection from "./AboutMe";
+import HistoricoSection from "./Hisorico";
 
-export {EstruturaPagina, Intro, AboutMe, Historico}
+export {EstruturaPagina, IntroSection, AboutMeSection, HistoricoSection}
