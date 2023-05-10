@@ -1,22 +1,21 @@
 import {AboutContainerStyle} from "./style";
-import ChangeSection from '@/components/ChangeSection';
-import { motion } from "framer-motion";
 import InfoCard from "./InfoCard";
-import ControlSection from "@/components/ControlSection";
-import { textVariant } from "@/constants/motion";
+import { ControlSection, ChangeSection, HeaderSection } from "@/components/EstruturaSection";
 
 function AboutMeComponent(){
+    const initialHeaderSectionConfigs = {
+        preTitle:"Introdução | Pedro Ceglia | Portifolio UI",
+        title:"Sobre Mim",
+        description:"Eu sou Pedro Silveira Ceglia, tenho 19 anos e sou desenvolverdor Web. Estudo programação desde 2019, e em 2021 comecei a me especializar em desenvolvimento Web."
+    }
     return(
         <AboutContainerStyle>
             <div className="content">
-                <motion.div variants={textVariant(.2)} className="section-head">
-                    <p>Introdução | Pedro Ceglia | Portifolio UI</p>
-                    <h2>Sobre Mim</h2>
-                </motion.div>
-                <motion.p className="description">
-                    Eu sou Pedro Silveira Ceglia, tenho 19 anos e sou desenvolverdor Web. 
-                    Estudo programação desde 2019, e em 2021 comecei a me especializar em desenvolvimento Web.
-                </motion.p>
+                <HeaderSection
+                    preTitle={initialHeaderSectionConfigs.preTitle}
+                    title={initialHeaderSectionConfigs.title}
+                    description={initialHeaderSectionConfigs.description}
+                />
                 <div className="cards-container">
                     <InfoCard name="Web" src="https://firebasestorage.googleapis.com/v0/b/portifolio-16fa8.appspot.com/o/PedroCeglia%2Foutros%2Fprojeto-portifolio-UI-%2Fweb.png?alt=media&token=4c63bf1c-8991-4e97-942e-631944815a14"
                      index={1}/>
@@ -28,9 +27,9 @@ function AboutMeComponent(){
                      index={4}/>
                 </div>
             </div>
-            <ChangeSection/>
+            <ChangeSection slug={"historico"}/>
         </AboutContainerStyle>
     )
 }
 
-export default ControlSection(AboutMeComponent, "about-me-section")
+export default ControlSection(AboutMeComponent, "about-me")
