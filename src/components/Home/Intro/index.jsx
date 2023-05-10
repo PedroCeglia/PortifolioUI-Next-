@@ -1,9 +1,9 @@
 import { IntroContainerStyle } from "./style";
 import ArticleInfo from "./ArticleInfo";
 import Desktop3DComponent from "../../3D/Desktop3DComponent";
-import ChangeSection from '@/components/ChangeSection';
+import { ControlSection, ChangeSection } from "@/components/EstruturaSection";
 
-export default function Intro(){
+function IntroSection(){
     return(
         <IntroContainerStyle>
             <div className="content">
@@ -12,7 +12,9 @@ export default function Intro(){
                     <Desktop3DComponent/>
                 </div>
             </div>
-            <ChangeSection/>
+            <ChangeSection slug={"about-me"}/>
         </IntroContainerStyle>
     )
 }
+
+export default ControlSection(IntroSection, "intro")
