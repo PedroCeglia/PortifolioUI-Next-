@@ -34,7 +34,7 @@ export default function Header({scrollPosition}){
                         <ul>
                             {navLinksList.map((link,key)=>{
                                 return(
-                                    <li key={key}><a href={link.path}>{link.linkName}</a></li>
+                                    <li key={key}><a href={link.id}>{link.title}</a></li>
                                 )
                             })}
                         </ul>
@@ -45,7 +45,7 @@ export default function Header({scrollPosition}){
                         <ul>
                             {navLinksList.map((link,key)=>{
                                 return(
-                                    <li key={key}><a href={link.path}>{link.linkName}</a></li>
+                                    <li key={key}><a href={link.id}>{link.title}</a></li>
                                 )
                             })}
                         </ul>
