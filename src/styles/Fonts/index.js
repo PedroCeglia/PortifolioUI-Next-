@@ -14,7 +14,10 @@ const fontsFamily = {
     cinzel:"'Cinzel', serif",
     rajdhani:"'Rajdhani', sans-serif",
     roboto:"'Roboto', sans-serif",
-    ysabey:"'Ysabeau', sans-serif"
+    ysabey:"'Ysabeau', sans-serif",
+    montserrat:"'Montserrat', sans-serif",
+    poppins:"'Poppins', sans-serif",
+    ubunto:"'Ubuntu', sans-serif"
 }
 const fonts = {
     fontsSize,
