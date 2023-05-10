@@ -1,11 +1,11 @@
-import { EstruturaPagina, Intro, AboutMe } from "@/components/Home";
+import { EstruturaPagina, Intro, AboutMe, Historico } from "@/components/Home";
 
 export default function Home() {
   return (
     <EstruturaPagina>
       <Intro/>
       <AboutMe/>
-      <span>Tragetoria</span>
+      <Historico/>
       <span>Dados</span>
       <span>Tecnologias</span>
     </EstruturaPagina>
