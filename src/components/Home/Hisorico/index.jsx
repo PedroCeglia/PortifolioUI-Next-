@@ -16,6 +16,7 @@ function HistoricoSection(){
                 description={initialHeaderSectionConfigs.description}
             />
             <Timeline/>
+            <ControlSection slug="tech"/>
         </HistoricoSectionStyle>
     )
 }
