@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import CanvasLoader from "@/components/EstruturaPagina/Loader";
 
 const ComputerMeshPrimitive = ({ isLess560px }) => {
   const computer = useGLTF("assets/3d/desktop_pc/scene.gltf");
@@ -69,7 +70,7 @@ const Desktop3DComponent = () => {
         cursor:"grab"
       }}
     >
-      <Suspense fallback={<>Carregando . . .</>}>
+      <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
