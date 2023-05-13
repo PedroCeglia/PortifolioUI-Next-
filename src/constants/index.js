@@ -1,3 +1,42 @@
+import {
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  javascriptBack,
+  typescriptBack,
+  htmlBack,
+  cssBack,
+  reactjsBack,
+  reduxBack,
+  tailwindBack,
+  nodejsBack,
+  mongodbBack,
+  gitBack,
+  figmaBack,
+  dockerBack,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+} from "./assets";
+
 const assetsImage = {
   backend:"https://firebasestorage.googleapis.com/v0/b/portifolio-16fa8.appspot.com/o/PedroCeglia%2Foutros%2Fprojeto-portifolio-UI-%2Fbackend.png?alt=media&token=8cbb68a9-49c3-4759-a956-c7377605cdd3",
   creator:"https://firebasestorage.googleapis.com/v0/b/portifolio-16fa8.appspot.com/o/PedroCeglia%2Foutros%2Fprojeto-portifolio-UI-%2Fcreator.png?alt=media&token=b8b56cbb-4c31-4145-ad88-1a0e34ebe31d",
@@ -63,58 +102,97 @@ const services = [
   }
 ];
 
-const technologies = [
+const listaTech = [
   {
-    name: "HTML 5",
-    icon: assetsImage.tech.html,
+    name:"HTML 5",
+    images:{
+      srcFront:html,
+      srcBack:htmlBack,
+    }
   },
   {
-    name: "CSS 3",
-    icon: assetsImage.tech.css,
+    name:"CSS 3",
+    images:{
+      srcFront:css,
+      srcBack:cssBack,
+    }
   },
   {
-    name: "JavaScript",
-    icon: assetsImage.tech.javascript,
+    name:"JavaScript",
+    images:{
+      srcFront:javascript,
+      srcBack:javascriptBack,
+    }
   },
   {
-    name: "TypeScript",
-    icon: assetsImage.tech.typescript,
+    name:"TypeScript",
+    images:{
+      srcFront:typescript,
+      srcBack:typescriptBack,
+    }
   },
   {
-    name: "React JS",
-    icon: assetsImage.tech.reactjs,
+    name:"React JS",
+    images:{
+      srcFront:reactjs,
+      srcBack:reactjs,
+    }
   },
   {
-    name: "Redux Toolkit",
-    icon: assetsImage.tech.redux,
+    name:"Redux Toolkit",
+    images:{
+      srcFront:redux,
+      srcBack:reduxBack,
+    }
   },
   {
-    name: "Tailwind CSS",
-    icon: assetsImage.tech.tailwind,
+    name:"Tailwind CSS",
+    images:{
+      srcFront:tailwind,
+      srcBack:tailwindBack,
+    }
   },
   {
-    name: "Node JS",
-    icon: assetsImage.tech.nodejs,
+    name:"Node JS",
+    images:{
+      srcFront:nodejs,
+      srcBack:nodejsBack,
+    }
   },
   {
-    name: "MongoDB",
-    icon: assetsImage.tech.mongodb,
+    name:"MongoDB",
+    images:{
+      srcFront:mongodb,
+      srcBack:mongodbBack,
+    }
   },
   {
-    name: "Three JS",
-    icon: assetsImage.tech.threejs,
+    name:"Three JS",
+    images:{
+      srcFront:threejs,
+      srcBack:threejs,
+    }
   },
   {
-    name: "git",
-    icon: assetsImage.tech.git,
+    name:"git",
+    images:{
+      srcFront:git,
+      srcBack:gitBack,
+    }
   },
   {
-    name: "figma",
-    icon: assetsImage.tech.figma,
+    name:"figma",
+    images:{
+      srcFront:figma,
+      srcBack:figmaBack,
+    }
   },
   {
-    name: "docker",
-    icon: assetsImage.tech.docker,
+    name:"docker",
+    images:{
+      srcFront:docker,
+      srcBack:dockerBack,
+    }
   }
 ];
 
@@ -266,4 +344,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, listaTech, experiences, testimonials, projects };
