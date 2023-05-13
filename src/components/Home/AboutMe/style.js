@@ -2,30 +2,14 @@ import styled from "styled-components";
 import style from "@/styles";
 
 export const AboutContainerStyle = styled.section`
-    width: 100%;
-    padding: 80px 0 50px;
-    min-height: 95vh;
-
-    position: relative;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    background-color: ${style.theme.rgbaFunctions.getColor2RGBA(.8)};
-    color: ${style.theme.color.c1};
-    font-family:${style.fonts.fontsFamily.brunoAceSc};
-
-    .content{
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        font-size: ${style.fonts.fontsSize.normal};
-        font-family: ${style.fonts.fontsFamily.cinzel};
-    }
-
+    align-items:center;
+    font-size: ${style.fonts.fontsSize.normal};
+    font-family: ${style.fonts.fontsFamily.cinzel};
+    
     .cards-container{
         margin-top: 40px;
         width: 90%;

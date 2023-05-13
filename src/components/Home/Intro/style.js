@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import style from "@/styles";
 
-export const IntroContainerStyle = styled.section`
+export const IntroContainerStyle = styled.div`
     width: 100%;
-    padding: 50px 0;
+    height: 100%;
     min-height: 95vh;
-    padding-top: 90px;
 
     position: relative;
     display: flex;
