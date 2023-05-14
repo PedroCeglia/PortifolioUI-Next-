@@ -9,7 +9,7 @@ export default function TechSection(){
         description:"De uma olhada em algumas das tecnologias em que eu possuo experiência"
     }
     return(
-        <EstruturaSection headerSectionDates={initialHeaderSectionConfigs} idSection={"tech"} changeSectionSlug={"intro"}>
+        <EstruturaSection headerSectionDates={initialHeaderSectionConfigs} idSection={"tech"} changeSectionSlug={"contact-me"}>
             <StacksListComponent stacksList={listaTech}/>
         </EstruturaSection>
     )
