@@ -7,12 +7,13 @@ function StacksBallPrimitiveComponent({images}){
     const [decalMapFront] = useTexture([images.srcFront.src])
     const [decalMapBack] = useTexture([images.srcBack.src])
     const rotationX = 2 * Math.PI 
+    const randomPositionRotateX = Math.random()
     return(
         <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
             <ambientLight intensity={0.35}/>
             <directionalLight position={[0,0,0.5]}/>
             <directionalLight position={[0,0,-0.5]}/>
-            <mesh castShadow receiveShadow scale={2.75}>
+            <mesh rotateX={randomPositionRotateX} castShadow receiveShadow scale={2.75}>
                 <icosahedronGeometry args={[1, 1]} />
                 <meshStandardMaterial
                     color='#928e88'
@@ -42,13 +43,13 @@ function StacksBallPrimitiveComponent({images}){
 export default function StacksBallCanvasComponent({images}){
     return (
         <Canvas
-          style={{width:"150px", height:"150px"}}
+          style={{width:"150px", height:"150px", cursor:"grab"}}
           frameloop='demand'
           dpr={[1, 2]}
           gl={{ preserveDrawingBuffer: true }}
         >
           <Suspense fallback={<CanvasLoader />}>
-            <OrbitControls enableZoom={false} />
+            <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={150}/>
             <StacksBallPrimitiveComponent images={images} />
           </Suspense>
     
