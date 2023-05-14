@@ -29,12 +29,13 @@ const ComputerMeshPrimitive = ({ isLess560px }) => {
 
 useGLTF.preload('assets/3d/desktop_pc/scene.gltf');
 const Desktop3DComponent = () => {
-  const [isLess560px, setIsLess560px] = useState(false);
 
+
+  const [isLess560px, setIsLess560px] = useState(false);
   useEffect(() => {
     createListenerToWidth("560px")
   }, []);
-    function createListenerToWidth(maxWidthValue){
+  function createListenerToWidth(maxWidthValue){
       // Add a listener for changes to the screen size
       const mediaQuery = window.matchMedia(`(max-width: ${maxWidthValue})`);
 
@@ -72,6 +73,8 @@ const Desktop3DComponent = () => {
     >
       <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls
+          autoRotate
+          autoRotateSpeed={10}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
