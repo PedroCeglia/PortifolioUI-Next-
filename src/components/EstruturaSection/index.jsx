@@ -2,7 +2,7 @@ import ChangeSection from "./ChangeSection";
 import ControlSection from "./ControlSection";
 import HeaderSection from "./HeaderSection";
 
-import { EstruturaSectionStyle, EstruturaSectionIntroStyle } from "./style";
+import { EstruturaSectionStyle } from "./style";
 
 
 export default function EstruturaSection({children, headerSectionDates, changeSectionSlug, idSection}){
@@ -30,10 +30,10 @@ export default function EstruturaSection({children, headerSectionDates, changeSe
     } else{
         return(
             <ControlSection idSection={idSection}>
-                <EstruturaSectionIntroStyle>
+                <EstruturaSectionStyle>
                     {children}
                     <ChangeSection slug={changeSectionSlug}/>
-                </EstruturaSectionIntroStyle>
+                </EstruturaSectionStyle>
             </ControlSection> 
         )
     }
