@@ -11,6 +11,7 @@ export const ChangeSectionStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     .content{
         height: 70px;
