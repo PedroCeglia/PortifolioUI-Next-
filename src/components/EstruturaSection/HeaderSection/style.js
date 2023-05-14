@@ -5,7 +5,7 @@ export const HeaderSectionStyle = styled.div`
     width: 100%;
     height: 100%;
     padding: 20px;
-    margin: 30px 0;
+    margin: 90px 0 30px;
     display: block;
 
     .section-head{
