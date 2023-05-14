@@ -11,7 +11,7 @@ export const AboutContainerStyle = styled.section`
     font-family: ${style.fonts.fontsFamily.cinzel};
     
     .cards-container{
-        margin-top: 40px;
+        margin-top: 20px;
         width: 90%;
         display: flex;
         flex-wrap: wrap;
