@@ -1,4 +1,4 @@
-import { EstruturaPagina, IntroSection, AboutMeSection, HistoricoSection, TechSection } from "@/components/Home";
+import { EstruturaPagina, IntroSection, AboutMeSection, HistoricoSection, TechSection, ContactMeSection } from "@/components/Home";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <AboutMeSection/>
       <HistoricoSection/>
       <TechSection/>
-      <span>Relatos</span>
+      <ContactMeSection/>
       <span>Entre em Contato</span>
     </EstruturaPagina>
   )
