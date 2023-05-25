@@ -1904,7 +1904,7 @@
   dependencies:
     "yallist" "^4.0.0"
 
-"maath@^0.5.2":
+"maath@^0.5.2", "maath@^0.5.3":
   "integrity" "sha512-ut63A4zTd9abtpi+sOHW1fPWPtAFrjK0E17eAthx1k93W/T2cWLKV5oaswyotJVDvvW1EXSdokAqhK5KOu0Qdw=="
   "resolved" "https://registry.npmjs.org/maath/-/maath-0.5.3.tgz"
   "version" "0.5.3"
