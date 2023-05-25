@@ -27,9 +27,7 @@ const ComputerMeshPrimitive = ({ isLess560px }) => {
   );
 };
 
-useGLTF.preload('assets/3d/desktop_pc/scene.gltf');
-const Desktop3DComponent = () => {
-
+const Desktop3DCanvasComponent = () => {
 
   const [isLess560px, setIsLess560px] = useState(false);
   useEffect(() => {
@@ -67,7 +65,7 @@ const Desktop3DComponent = () => {
       style={{
         maxWidth:"600px", width:"100%", minWidth:"250px",
         minHeight:"380px", height:"380px",
-        display:"flex", justifyContent:"center", alingItens:"center",
+        display:"flex", justifyContent:"center", alingItems:"center",
         cursor:"grab"
       }}
     >
@@ -87,4 +85,4 @@ const Desktop3DComponent = () => {
   );
 };
 
-export default Desktop3DComponent;
+export default Desktop3DCanvasComponent
