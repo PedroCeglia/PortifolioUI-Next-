@@ -1,5 +1,5 @@
 import { IntroArticleInfoStyle } from "./style"
-import Desktop3DComponent from "@/components/3D/Desktop3DComponent"
+import { Computer3DComponent } from "@/components/3D";
 import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/constants/motion"
@@ -22,7 +22,7 @@ export default function ArticleInfo(){
                         <a href="https://www.linkedin.com/in/pedro-ceglia-a914941b7/" target={"_blank"}><img src='assets/icons/linkedin.png'/>Linkedin</a>                    
                     </div>    
                     <div className="hasntSize">
-                        <Desktop3DComponent/>
+                        <Computer3DComponent/>
                     </div>
                 </motion.div>
             </Tilt>
