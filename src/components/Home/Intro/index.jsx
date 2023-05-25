@@ -1,6 +1,6 @@
 import { IntroContainerStyle } from "./style";
 import ArticleInfo from "./ArticleInfo";
-import Desktop3DComponent from "../../3D/Desktop3DComponent";
+import { Computer3DComponent } from "@/components/3D";
 import EstruturaSection from "@/components/EstruturaSection";
 
 export default function IntroSection(){
@@ -10,7 +10,7 @@ export default function IntroSection(){
                 <div className="content">
                     <ArticleInfo/>
                     <div className="hasSize">
-                        <Desktop3DComponent/>
+                        <Computer3DComponent/>
                     </div>
                 </div>                
             </IntroContainerStyle>
