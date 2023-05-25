@@ -11,6 +11,8 @@ export const IntroArticleInfoStyle = styled.article`
     align-items: flex-end;
 
     position: relative;
+    font-family: ${style.fonts.fontsFamily.poppins};
+    font-weight: 100;
     
     .tilt-container{
         width: 80%;
