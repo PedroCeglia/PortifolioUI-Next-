@@ -1,9 +1,8 @@
 import EstruturaSection from "@/components/EstruturaSection";
 import { ContactMeSectionStyle } from "./style";
 import ContactForm from "./ContactForm";
-import dynamic from 'next/dynamic';
-
-const Planet3DComponent = dynamic(()=> import("@/components/3D/Planet3dComponent"))
+import { Planet3DComponent } from "@/components/3D";
+import Stars3DContainer from "./StartsContainer";
 
 export default function ContactMeSection(){
     const isCSR = process.browser? "CSR -- Contact-Me":"SSR  -- Contact-Me"
@@ -13,7 +12,9 @@ export default function ContactMeSection(){
             <ContactMeSectionStyle>
                 <ContactForm/>
                 <Planet3DComponent/>
+                <Stars3DContainer/>
             </ContactMeSectionStyle>
         </EstruturaSection>
     )
 }
+
