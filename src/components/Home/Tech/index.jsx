@@ -1,6 +1,10 @@
 import EstruturaSection from "@/components/EstruturaSection";
+import { TechSectionStyle } from "./style";
 import StacksListComponent from "./StacksListComponent";
 import { listaTech } from "@/constants";
+import Stars3DContainer from "../StartsContainer";
+
+
 
 export default function TechSection(){
     const initialHeaderSectionConfigs = {
@@ -10,7 +14,10 @@ export default function TechSection(){
     }
     return(
         <EstruturaSection headerSectionDates={initialHeaderSectionConfigs} idSection={"tech"} changeSectionSlug={"contact-me"}>
-            <StacksListComponent stacksList={listaTech}/>
+            <TechSectionStyle>
+                <StacksListComponent stacksList={listaTech}/>
+                <Stars3DContainer/>                
+            </TechSectionStyle>
         </EstruturaSection>
     )
 }
