@@ -7,8 +7,7 @@ import * as random  from "maath/random";
 function StarsPointsComponent(props){
 
     const pointsRef = useRef();
-    const [ pointsPositions ] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.25 })); 
-    console.log(pointsPositions)   
+    const [ pointsPositions ] = useState(() => random.inSphere(new Float32Array(5001), { radius: 1.25 })); 
 
     useFrame((state, delta) => {
         pointsRef.current.rotation.x -= delta / 10;
