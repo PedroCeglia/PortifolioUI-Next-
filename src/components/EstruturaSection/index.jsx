@@ -7,7 +7,7 @@ import { EstruturaSectionStyle } from "./style";
 
 export default function EstruturaSection({children, headerSectionDates, changeSectionSlug, idSection}){
     function veryfyIfSectionIsOdd(){
-        if(idSection=="about-me" || idSection=="tech"){
+        if(idSection=="intro" || idSection=="historico"){
             return true
         }
     }
