@@ -24,7 +24,7 @@ export function StacksBallFloatComponent({images}){
     return(
         <Float            
             style={{width:"150px", height:"150px", cursor:"grab"}}
-            speed={1.75}
+            speed={1}
             rotationIntensity={1} 
             floatIntensity={2}
         >
